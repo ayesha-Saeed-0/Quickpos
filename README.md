@@ -1,0 +1,2 @@
+# QuickPOS Landing Page
+
