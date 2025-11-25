@@ -1,0 +1,263 @@
+/* ------------------------------
+   BASIC RESET + GLOBAL STYLES
+--------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background: #f8f9fb;
+  color: #222;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ------------------------------
+   BUTTONS
+--------------------------------*/
+.btn-primary {
+  background: #007bff;
+  color: #fff;
+  padding: 10px 18px;
+  text-decoration: none;
+  border-radius: 6px;
+  display: inline-block;
+  transition: 0.2s ease-in-out;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background: #0056c7;
+}
+
+.small-btn {
+  padding: 7px 14px;
+}
+
+/* ------------------------------
+   HEADER
+--------------------------------*/
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 15px 0;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.navbar a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #007bff;
+}
+
+/* ------------------------------
+   HERO SECTION
+--------------------------------*/
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.hero-content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.hero-content h1 {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hero-image img {
+  width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ------------------------------
+   FEATURES
+--------------------------------*/
+.features {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.features h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.feature-box {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.feature-box h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* ------------------------------
+   PRICING
+--------------------------------*/
+.pricing {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.pricing h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.pricing-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.pricing-box {
+  background: #fff;
+  padding: 25px;
+  width: 260px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.pricing-box .price {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 12px 0;
+}
+
+.popular {
+  border: 2px solid #007bff;
+}
+
+/* ------------------------------
+   CONTACT FORM
+--------------------------------*/
+.contact {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.contact form {
+  width: 60%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact label {
+  font-weight: 600;
+  margin: 10px 0 5px;
+  display: block;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.contact textarea {
+  height: 120px;
+}
+
+/* ------------------------------
+   FOOTER
+--------------------------------*/
+.site-footer {
+  background: #222;
+  color: #fff;
+  padding: 25px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* ------------------------------
+   RESPONSIVE
+--------------------------------*/
+@media (max-width: 900px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    padding-right: 0;
+  }
+
+  .hero-image img {
+    margin-top: 20px;
+    width: 300px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact form {
+    width: 90%;
+  }
+}
